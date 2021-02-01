@@ -1,4 +1,4 @@
-package org.starry.bd.rrm.commons;
+package com.muyichun.utils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
