@@ -19,12 +19,6 @@
 	</properties>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>1.15</version>
@@ -48,6 +42,30 @@
 			<artifactId>javase</artifactId>
 			<version>3.2.1</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.binarywang</groupId>
+			<artifactId>java-testdata-generator</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- 单元测试 -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-guava</artifactId>
+			<version>3.0.0</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 	
 	<build>
@@ -60,7 +78,6 @@
 				<configuration>
 					<source>${jdk.version}</source>
 					<target>${jdk.version}</target>
-					<encode>${project.build.sourceEncoding}</encode>
 				</configuration>
 			</plugin>
 		</plugins>
